@@ -1,0 +1,2 @@
+# SEM
+Student Enrollment management
