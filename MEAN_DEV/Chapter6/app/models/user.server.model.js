@@ -1,4 +1,5 @@
 var mongoose = require('mongoose'),
+crypto = require('crypto'),
     Schema = mongoose.Schema;
 //passportLocalMongoose = require('passport-local-mongoose');
 
