@@ -6,7 +6,7 @@
 </head>
 <body>
     <mean-app>
-        >Loading...</h1>
+        <h1>Loading...</h1>
     </mean-app>
     <script type="text/javascript">
         window.user = <%- user || 'null' %>;
@@ -17,7 +17,8 @@
     <script src="lib/systemjs/dist/system.js"></script>
     <script src="systemjs.config.js"></script>
     <script>
-        System.import('app').catch(function(err){ console.error(err); });
+        System.import('app').catch(function(err){
+            console.error(err); });
     </script>
 </body>
 </html>

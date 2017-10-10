@@ -8,19 +8,19 @@ import { HomeModule } from './home/home.module';
 import { AuthenticationService } from './authentication/authentication.service';
 import { AuthenticationModule } from './authentication/authentication.module';
 @NgModule({
-    imports: [
-        BrowserModule,
-        HttpModule,
-        AuthenticationModule,
-        HomeModule,
-        RouterModule.forRoot(AppRoutes),
-    ],
-    declarations: [
-        AppComponent
-    ],
-    providers: [
-        AuthenticationService
-    ],
-    bootstrap: [AppComponent]
+imports: [
+BrowserModule,
+HttpModule,
+AuthenticationModule,
+HomeModule,
+RouterModule.forRoot(AppRoutes),
+],
+declarations: [
+AppComponent
+],
+providers: [
+AuthenticationService
+],
+bootstrap: [AppComponent]
 })
 export class AppModule { }
