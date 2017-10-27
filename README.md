@@ -1,2 +1,2 @@
-# SEM
-Student Enrollment management
+# Search Engine Marketing (SEM)
+
