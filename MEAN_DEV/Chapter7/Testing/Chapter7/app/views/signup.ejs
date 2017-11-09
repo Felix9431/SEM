@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%=title %>
+    </title>
+</head>
+
+<body>
+    <% for(var i in messages) { %>
+        <div class="flash">
+            <%= messages[i] %>
+        </div>
+        <% } %>
+            <form action="/signup" method="post">
+                <table>
+                    <tr>
+                        <td> <label>First Name:</label></td>
+                        <td><input type="text" name="firstName" /></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Last Name:</label></td>
+                        <td> <input type="text" name="lastName" /></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Email:</label></td>
+                        <td> <input type="text" name="email" /></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Username:</label></td>
+                        <td><input type="text" name="username" /></td>
+                    </tr>
+                    <tr>
+                        <td><label>Password:</label></td>
+                        <td><input type="password" name="password" /></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Sign up" /></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <!--<div>
+                    <label>First Name:</label>
+                    <input type="text" name="firstName" />
+                </div>
+                <div>
+                    <label>Last Name:</label>
+                    <input type="text" name="lastName" />
+                </div>
+                <div>
+                    <label>Email:</label>
+                    <input type="text" name="email" />
+                </div>
+                <div>
+                    <label>Username:</label>
+                    <input type="text" name="username" />
+                </div>
+                <div>
+                    <label>Password:</label>
+                    <input type="password" name="password" />
+                </div>
+                <div>
+                    <input type="submit" value="Sign up" />
+                </div>-->
+            </form>
+            <a href="/oauth/facebook">Sign in with Facebook</a>
+            <a href="/oauth/google">Sign in with Google</a>
+</body>
+
+</html>
