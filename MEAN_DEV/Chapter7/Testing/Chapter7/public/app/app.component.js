@@ -24,7 +24,7 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'mean-app',
-                        template: '<h1>Hello World</h1><router-outlet></router-outlet>',
+                        template: '<h1>Hello World</h1> <router-outlet></router-outlet>',
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);
